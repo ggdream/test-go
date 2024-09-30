@@ -1,5 +1,7 @@
 type: server
 steps:
+  - echo $(git describe --short)
+  - sleep.exe 10
   - go mod download
   - go build -o ./build/test.exe
 apply: ./build
