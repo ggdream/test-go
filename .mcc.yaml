@@ -1,6 +1,6 @@
 type: server
 steps:
-  - echo $(git describe --short)
+  - echo $(git describe --tags)
   - sleep.exe 10
   - go mod download
   - go build -o ./build/test.exe
