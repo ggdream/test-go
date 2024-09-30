@@ -1,6 +1,6 @@
 type: server
 steps:
   - go mod download
-  - go build ./build/test.exe
+  - go build -o ./build/test.exe
 apply: ./build
 command: ["./test"]
